@@ -1,15 +1,15 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-
+import Demo from '../pages/demo.vue';
 const routes = [
   {
     path: '/',
-    name: 'Demo',
-    component: () => import ('../pages/demo.vue')
+    name: 'HelloWorld',
+    component: () => import ('../components/HelloWorld.vue')
   },
   {
     path: '/demo',
     name: 'Demo',
-    component: () => import ('../pages/demo.vue')
+    component: Demo,
   }
 ]
 
@@ -18,7 +18,7 @@ const router = createRouter({
   routes,
 })
 
-router.beforeEach((to, from, next) => {
+// router.beforeEach((to, from, next) => {
   // if (to.path === '/') {
   //   next({
   //     path: '/demo',
@@ -26,7 +26,6 @@ router.beforeEach((to, from, next) => {
   // } else {
   //   next();
   // }
-  next();
-})
+// })
 
 export default router;

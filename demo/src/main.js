@@ -5,6 +5,4 @@ import Vant from 'vant';
 import 'vant/lib/index.css';
 import './index.css'
 const app = createApp(App)
-app.use(router)
-app.use(Vant)
-app.mount('#app')
+app.use(router).use(Vant).mount('#app')
