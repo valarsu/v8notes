@@ -123,7 +123,7 @@ export default {
         console.log(e);
       }
     };
-    // todo 代码注释
+    // todo: 代码注释
     return {
       count, // ref返回的是一个响应式的对象
       runDemo1,
@@ -131,6 +131,7 @@ export default {
       runDemo3,
       runDemo4,
       runDemo5,
+      runDemo6,
     };
   },
 };
